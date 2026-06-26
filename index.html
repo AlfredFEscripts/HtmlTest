@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Resume</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-color: #f4f4f4;
+        }
+        .resume {
+            width: 8.5in;
+            height: 11in;
+            padding: 1in;
+            background-color: white;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            position: relative;
+            box-sizing: border-box;
+        }
+        .header {
+            text-align: center;
+            margin-bottom: 2rem;
+            position: relative;
+        }
+        .header h1 {
+            margin: 0;
+            font-size: 32px;
+            text-transform: uppercase;
+            color: #333;
+        }
+        .header p {
+            margin: 5px 0;
+            font-size: 16px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            color: #666;
+        }
+        .header::before {
+            content: "OW";
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 100px;
+            opacity: 0.1;
+            color: #ddd;
+            z-index: 0;
+        }
+        .divider {
+            border-top: 1px solid #ccc;
+            margin: 1rem 0;
+        }
+        .section {
+            margin-bottom: 2rem;
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+        .section-header {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            margin-bottom: 1rem;
+        }
+        .section-icon {
+            background-color: #f0f0f0;
+            color: #333;
+            width: 30px;
+            height: 30px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 50%;
+            font-weight: bold;
+        }
+        .section-title {
+            text-transform: uppercase;
+            font-size: 18px;
+            letter-spacing: 2px;
+            color: #333;
+            margin: 0;
+        }
+        .contact-details {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        .contact-details li {
+            margin-bottom: 10px;
+        }
+        .contact-label {
+            font-weight: bold;
+        }
+        .summary p {
+            line-height: 1.6;
+        }
+
+        @media (max-width: 8.5in) {
+            .resume {
+                width: 100%;
+                height: auto;
+                padding: 2rem;
+            }
+            .header h1 {
+                font-size: 24px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="resume">
+    <div class="header">
+        <h1>Alfred Rey</h1>
+        <p>PERSONAL PROFILE</p>
+    </div>
+    
+    <div class="divider"></div>
+    
+    <div class="main-content">
+        <div class="section-header">
+            <div class="section-icon">P</div>
+            <h2 class="section-title">PERSONAL DETAILS</h2>
+        </div>
+        <ul class="contact-details">
+            <li><span class="contact-label">Address:</span> example city, zone 1, brgy 10</li>
+            <li><span class="contact-label">Birthday:</span> april 6,2007</li>
+            <li><span class="contact-label">Age:</span> 48</li>
+            <li><span class="contact-label">Gender:</span> Gay</li>
+            <li><span class="contact-label">Religion:</span> Catholic</li>
+        </ul>
+        
+        <div class="divider"></div>
+
+        <div class="section-header">
+            <div class="section-icon">C</div>
+            <h2 class="section-title">CONTACT INFORMATION</h2>
+        </div>
+        <ul class="contact-details">
+            <li><span class="contact-label">Contact Number:</span> +63 967 697 6767</li>
+            <li><span class="contact-label">Emergency Contact Number:</span> +63 911 012 1234</li>
+        </ul>
+    </div>
+</div>
+
+</body>
+</html>
